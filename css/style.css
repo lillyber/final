@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Alice|Nanum+Pen+Script|Titillium+Web|ABeeZee|Economica|Roboto+Mono');
+
+/*
+
+font-family: 'Alice', serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Titillium Web', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'ABeeZee', sans-serif;
+font-family: 'Economica', sans-serif;
+
+POTENTIAL COLORS
+#8597A0
+#788C96
+
+#AE9DAA
+#978192
+
+url(../img/bkbd/blurred4.jpg) no-repeat center center fixed;
+
+*/
+
+
+html {
+  background: #AE9DAA;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+img{
+  margin-top: 65px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textbox{
+  margin: 30px;
+  border-radius: 25px;
+  background-color: #e6969a;
+  opacity: 0.5;
+}
+
+.paragraphtext{
+font-family: 'ABeeZee', sans-serif;
+font-size: 22px;
+}
+
+.view{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view:hover img{
+  transform: scale(2) rotate(5deg);
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.view img{
+  left: 10px;
+  margin-left: -10px;
+  transition: all 0.6s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px #e6969a;
+    padding: 10px;
+}
+
+
+body{
+  padding-top: 10px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 75px;
+}
+
+header {
+  width: 80%;
+  padding: 0 10%;
+  margin-bottom: 10px;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(161, 144, 159, 0.72);
+  background: ;
+}
+
+header h1 {
+  color: #190a23;
+  display: inline-block;
+  text-shadow: 3px 3px 5px #a1909f;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+h2{
+   font-family: 'Titillium Web', sans-serif;
+   text-align: center;
+   font-size: 30px;
+}
+
+
+nav {
+  float: right;
+  display: inline-block;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align-center;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(161, 144, 159, 0.02);
+}
+
+nav li {
+  font-family: 'Titillium Web', sans-serif;
+  text-shadow: 2px 2px 5px #746772;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  width: 120px;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: #53255c;
+  display: block;
+  text-align: center;
+  transition: all 1s;
+}
+
+nav a:hover {
+  background-color: rgba(161, 144, 159, 0.72);
+  color: #eea64a;
+}
+
+nav a.active {
+  background-color: rgba(196, 182, 189, 0.72);
+  color: #53255c;
+}
+
+
+
+
+/* image grid */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 5px;
+
+  box-sizing: border-box;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
